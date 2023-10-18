@@ -1,0 +1,65 @@
+/* src/app/components/RacImage.module.css */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 15px;
+    padding: 60px; 
+    border-radius: 10px; 
+  }
+  
+  .imageContainer {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .imageContainer:hover {
+    transform: scale(1.05); 
+    
+  }
+  
+  .image {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    display: block; 
+  }
+  
+  
+  .imageContainer:hover .image {
+    transform: scale(1.1);
+  }
+  
+ 
+
+.headingimage {
+    text-align: center; 
+    font-family: 'Mulish', sans-serif; 
+    font-size: 36px; 
+    color: #ffda79; 
+    text-transform: uppercase; 
+    letter-spacing: 6px; 
+    margin-bottom: 20px; 
+    position: relative;
+    overflow: hidden; 
+  
+    
+    background-image: linear-gradient(to right, #ffda79, #8b4513);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  
+    
+    animation: shine 2s infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: -200%;
+    }
+    100% {
+      background-position: 200%;
+    }
+  }
