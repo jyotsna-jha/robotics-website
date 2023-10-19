@@ -1,4 +1,4 @@
-import Herosection from "@/app/components/Herosection";
+import Herosection from '@/app/components/Herosection';
 import RacImageGallery from "./components/RacImageGallery";
 
 
